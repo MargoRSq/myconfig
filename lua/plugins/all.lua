@@ -1,17 +1,6 @@
 return {
 
     {
-        "kylechui/nvim-surround",
-    },
-
-    {
-        "Pocco81/auto-save.nvim",
---        event = "VeryLazy",
-        config = function()
-            default_setup("auto-save")
-        end
-    },
-    {
         "williamboman/mason.nvim",
     },
     {
@@ -28,19 +17,5 @@ return {
 	},
 	{
 		"nvim-telescope/telescope.nvim",
-	},
-	{
-		"numToStr/Comment.nvim",
-	},
-	{
-		"windwp/nvim-autopairs",
-	},
-
-	{
-		"echasnovski/mini.pairs",
-		event = "VeryLazy",
-		config = function()
-			require("mini.pairs").setup({})
-		end,
 	},
 }
