@@ -1,0 +1,15 @@
+{
+  "Comment.nvim": { "branch": "master", "commit": "d9cfae1059b62f7eacc09dba181efe4894e3b086" },
+  "auto-save.nvim": { "branch": "main", "commit": "979b6c82f60cfa80f4cf437d77446d0ded0addf0" },
+  "catppuccin": { "branch": "main", "commit": "26e498db297607fe17a6206c5a28f0f4cb532954" },
+  "lazy.nvim": { "branch": "main", "commit": "8a3754717162cd453abd8da87a6020beaba17994" },
+  "mason.nvim": { "branch": "main", "commit": "153fce2d2c4a78b394e50804941e5138dfd16a29" },
+  "mini.pairs": { "branch": "main", "commit": "fec9aba50912d8c3d92d07d6a77952de84f8d7ad" },
+  "nvim-autopairs": { "branch": "master", "commit": "f00eb3b766c370cb34fdabc29c760338ba9e4c6c" },
+  "nvim-lspconfig": { "branch": "master", "commit": "22c87d6f48c4fb1daf33476450d0b14a64230809" },
+  "nvim-surround": { "branch": "main", "commit": "a06dea11e7fdcf338776fa51fa5277163ffb048d" },
+  "nvim-tree.lua": { "branch": "master", "commit": "ccb6d8a518d32e22bf5874f90e6c22661a5d8b46" },
+  "nvim-treesitter": { "branch": "master", "commit": "69388e84c34d40c3d5c7d2f310db13276f2179e1" },
+  "telescope.nvim": { "branch": "master", "commit": "b79cd6c88b3d96b0f49cb7d240807cd59b610cd8" },
+  "tokyonight.nvim": { "branch": "main", "commit": "def91651c41f6d1d43ebcb50763324d35331baee" }
+}
