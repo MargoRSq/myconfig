@@ -1,9 +1,6 @@
 return {
 
     {
-        "williamboman/mason.nvim",
-    },
-    {
         "kyazdani42/nvim-tree.lua",
         event = "VeryLazy",
 		cmd = { "NvimTreeToggle", "NvimTreeFocus" },

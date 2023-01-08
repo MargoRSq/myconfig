@@ -3,6 +3,7 @@ return {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
+    event = "VeryLazy",
     ensure_installed = {
       "bash",
       "help",
@@ -12,10 +13,11 @@ return {
       "lua",
       "markdown",
       "markdown_inline",
+      "go",
+      "c",
+      "cpp",
       "python",
-      "query",
       "regex",
-      "tsx",
       "typescript",
       "vim",
       "yaml",

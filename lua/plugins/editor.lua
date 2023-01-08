@@ -5,6 +5,30 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
+    {
+        "windwp/nvim-autopairs",
+        event = "VeryLazy",
+        dependencies = {"nvim-cmp"},
+        config = function()
+                local present1, autopairs = pcall(require, "nvim-autopairs")
+                local present2, cmp = pcall(require, "cmp")
+
+                if not (present1 and present2) then
+                    return
+                end
+
+                local options = {
+                    fast_wrap = {},
+                    disable_filetype = { "TelescopePrompt", "vim" },
+                }
+
+                -- options = load_override(options, "windwp/nvim-autopairs")
+                autopairs.setup({})
+
+                local cmp_autopairs = require "nvim-autopairs.completion.cmp"
+                cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+            end
+    },
   -- change trouble config
   -- {
   --   "folke/trouble.nvim",

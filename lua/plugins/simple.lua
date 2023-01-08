@@ -1,11 +1,11 @@
 return {
-    {
-        "kylechui/nvim-surround",
-        event = "VeryLazy",
-        config = function()
-            default_setup("nvim-surround")
-        end,
-    },
+    -- {
+    --     "kylechui/nvim-surround",
+    --     event = "VeryLazy",
+    --     config = function()
+    --         default_setup("nvim-surround")
+    --     end,
+    -- },
     {
         "Pocco81/auto-save.nvim",
         -- event = "VeryLazy",
@@ -13,6 +13,11 @@ return {
             default_setup("auto-save")
         end
     },
+    -- {
+    --     "echasnovski/mini.nvim",
+    --     event = "VeryLazy",
+    --     branch = 'stable',
+    -- },
     {
         "numToStr/Comment.nvim",
         config = function()
@@ -29,12 +34,5 @@ return {
             "toggle comment",
             mode = "v", },
         },
-    },
-    {
-        "windwp/nvim-autopairs",
-        event = "VeryLazy",
-        config = function()
-            default_setup("nvim-autopairs")
-        end,
     },
 }
