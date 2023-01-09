@@ -12,7 +12,7 @@ return {
             "hrsh7th/cmp-nvim-lsp",
         },
         config = function()
-            local servers = {"sumneko_lua", "clangd"}
+            local servers = {"sumneko_lua", "clangd", "gopls"}
             setup_servers(servers)
        end,
     },

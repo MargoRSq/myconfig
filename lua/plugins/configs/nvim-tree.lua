@@ -1,4 +1,5 @@
 return {
+    update_cwd = true,
     view = {
         adaptive_size = true,
         side = "right",

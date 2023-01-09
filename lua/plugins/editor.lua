@@ -17,10 +17,10 @@ return {
                     return
                 end
 
-                local options = {
-                    fast_wrap = {},
-                    disable_filetype = { "TelescopePrompt", "vim" },
-                }
+                -- local options = {
+                --     fast_wrap = {},
+                --     disable_filetype = { "TelescopePrompt", "vim" },
+                -- }
 
                 -- options = load_override(options, "windwp/nvim-autopairs")
                 autopairs.setup({})
