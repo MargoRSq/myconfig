@@ -1,7 +1,6 @@
 return {
     {
         "hrsh7th/nvim-cmp",
-        -- event = "InsertEnter",
         dependencies = {
             "friendly-snippets",
             "LuaSnip",
@@ -12,12 +11,11 @@ return {
             "cmp-path",
         },
         config = function()
-            setup_with_options("cmp", "plugins.configs.cmp")
+            setup_with_options_path("cmp", "plugins.configs.cmp")
         end,
     },
     {
         "rafamadriz/friendly-snippets",
-        -- module = { "cmp", "cmp_nvim_lsp" },
     },
     {
         "L3MON4D3/LuaSnip",

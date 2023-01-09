@@ -5,7 +5,7 @@ return {
         event = "VeryLazy",
 		cmd = { "NvimTreeToggle", "NvimTreeFocus" },
         config = function()
-            setup_with_options("nvim-tree", "plugins.configs.nvim-tree")
+            setup_with_options_path("nvim-tree", "plugins.configs.nvim-tree")
         end,
         keys = {
             { "<C-n>", "<cmd> NvimTreeToggle <CR>", mode = {"n", "v", "t"}},
