@@ -16,7 +16,7 @@ return {
       "L3MON4D3/LuaSnip",
       dependencies = {"friendly-snippets", "nvim-cmp"},
       config = function()
-          default_setup("LuaSnip")
+          -- default_setup("LuaSnip")
           -- require("plugins.configs.others").luasnip()
       end,
   },
