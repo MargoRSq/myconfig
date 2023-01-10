@@ -2,7 +2,7 @@ function default_setup(module_name)
     local present, module = pcall(require, module_name)
 
     if present then
-        module.setup()
+        module.setup({})
     end
 end
 

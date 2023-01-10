@@ -9,6 +9,7 @@
   "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },
   "friendly-snippets": { "branch": "main", "commit": "484fb38b8f493ceeebf4e6fc499ebe41e10aae25" },
   "lazy.nvim": { "branch": "main", "commit": "d2110278be136fd977d357ff49689352d58b2e83" },
+  "lualine.nvim": { "branch": "master", "commit": "d8c392dd75778d6258da4e7c55522e94ac389732" },
   "mason-lspconfig.nvim": { "branch": "main", "commit": "3751eb5c56c67b51e68a1f4a0da28ae74ab771c1" },
   "mason.nvim": { "branch": "main", "commit": "ca8afdf6f44e70461c113d89e7718154c65d2e97" },
   "neoconf.nvim": { "branch": "main", "commit": "3e3294631ef23599b9fccb87dee2592c73d11c60" },
