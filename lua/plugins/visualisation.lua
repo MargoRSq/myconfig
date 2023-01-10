@@ -1,5 +1,6 @@
 return {
 
+
   -- tokyonight
   {
     "folke/tokyonight.nvim",
@@ -11,6 +12,13 @@ return {
       tokyonight.load()
     end,
   },
+  {
+      "rcarriga/nvim-notify",
+      event = "VeryLazy",
+      config = function()
+          vim.notify = require("notify")
+      end
+  }
 
   -- catppuccin
   -- {

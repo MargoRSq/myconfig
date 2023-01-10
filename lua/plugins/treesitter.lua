@@ -1,26 +1,14 @@
 return {
-
-  -- treesitter
-  {
-    "nvim-treesitter/nvim-treesitter",
-    event = "VeryLazy",
-    ensure_installed = {
-      "bash",
-      "help",
-      "html",
-      "javascript",
-      "json",
-      "lua",
-      "markdown",
-      "markdown_inline",
-      "go",
-      "c",
-      "cpp",
-      "python",
-      "regex",
-      "typescript",
-      "vim",
-      "yaml",
+    {
+        "nvim-treesitter/nvim-treesitter",
+        event = "VeryLazy",
+        dependecies = {"p00f/nvim-ts-rainbow"},
+        config = function()
+            setup_with_options_path("nvim-treesitter.configs", "plugins.configs.treesitter")
+        end
     },
-  },
+    {
+        "p00f/nvim-ts-rainbow",
+        event = "VeryLazy"
+    }
 }

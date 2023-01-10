@@ -1,7 +1,8 @@
-local keymap = vim.keymap
+-- local keymap = vim.keymap
 
 vim.opt.laststatus = 3 -- global statusline
 vim.opt.showmode = false
+vim.opt.termguicolors = true
 
 vim.opt.clipboard = "unnamedplus"
 vim.opt.cursorline = true
@@ -46,16 +47,3 @@ vim.opt.swapfile = false
 vim.opt.whichwrap:append "<>[]hl"
 
 --disable space and enter in normal mode
-keymap.set('n', '<Space>', '<NOP>')
-keymap.set('n', '<Enter>', '<NOP>')
-
--- disable some builtin vim plugins
-keymap.set('n', '<Up>', 'VdkP')
-keymap.set('n', '<Down>', 'Vdp')
-
-keymap.set('t', 'jk', [[<C-\><C-n>]])
-keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]])
-keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]])
-keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]])
-keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]])
-
