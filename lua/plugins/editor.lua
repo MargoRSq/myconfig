@@ -1,10 +1,35 @@
--- every spec file under config.plugins will be loaded automatically by lazy.nvim
---
--- In your plugin files, you can:
--- * add extra plugins
--- * disable/enabled LazyVim plugins
--- * override the configuration of LazyVim plugins
 return {
+    -- {
+    --     "kylechui/nvim-surround",
+    --     event = "VeryLazy",
+    --     config = function()
+    --         default_setup("nvim-surround")
+    --     end,
+    -- },
+    {
+        "Pocco81/auto-save.nvim",
+        -- event = "VeryLazy",
+        config = function()
+            default_setup("auto-save")
+        end
+    },
+    {
+        "numToStr/Comment.nvim",
+        config = function()
+            default_setup("Comment")
+        end,
+        keys =
+        {
+            { "<leader>/",
+            "<cmd>lua require('Comment.api').toggle.linewise()<CR>",
+            "toggle comment",
+            mode = "n", },
+            { "<leader>/",
+            "<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>",
+            "toggle comment",
+            mode = "v", },
+        },
+    },
     {
         "windwp/nvim-autopairs",
         event = "VeryLazy",
@@ -29,29 +54,4 @@ return {
                 cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
             end
     },
-  -- change trouble config
-  -- {
-  --   "folke/trouble.nvim",
-  --   config = { use_diagnostic_signs = true },
-  -- },
-
-  -- add symbols-outline
-  -- {
-  --   "simrat39/symbols-outline.nvim",
-  --   cmd = "SymbolsOutline",
-  --   keys = { { "<leader>cs", "<cmd>SymbolsOutline<cr>", desc = "Symbols Outline" } },
-  --   config = true,
-  -- },
-
-  -- add zen-mode
-  -- {
-  --   "folke/zen-mode.nvim",
-  --   cmd = "ZenMode",
-  --   config = true,
-  --   keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
-  -- },
-
-  -- use mini.starter instead of alpha
-  -- { "goolord/alpha-nvim", enabled = false },
-  -- { "echasnovski/mini.starter", enabled = true },
 }

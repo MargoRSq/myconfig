@@ -13,10 +13,7 @@ return {
             { "<leader>e", "<cmd> NvimTreeFocus <CR>", mode = {"n", "v", "t"}},
         }
 	},
-    {
-        "kyazdani42/nvim-web-devicons",
-    },
-	{
-		"nvim-telescope/telescope.nvim",
-	},
+
+    {"kyazdani42/nvim-web-devicons"},
+	{"nvim-telescope/telescope.nvim"},
 }

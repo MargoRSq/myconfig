@@ -10,20 +10,34 @@ return {
         end,
     },
     {
-        "rcarriga/nvim-notify",
-        event = "VeryLazy",
-        config = function()
-            vim.notify = require("notify")
-        end
-    },
-    {
         "nvim-lualine/lualine.nvim",
         lazy = false,
         dependecies = {"kyazdani42/nvim-web-devicons"},
         config = function ()
-            require('lualine').setup({})
+            default_setup("lualine")
         end,
-    }
+    },
+    {
+        "akinsho/bufferline.nvim",
+        lazy = false,
+        config = function ()
+            default_setup("bufferline")
+        end
+    },
+    {
+        "folke/noice.nvim",
+        lazy = false,
+        dependecies = {
+            "MunifTanjim/nui.nvim",
+            "rcarriga/nvim-notify",
+        },
+        config = function ()
+            setup_with_options_path("noice", "plugins.configs.noice")
+        end
+    },
+
+    {"rcarriga/nvim-notify"},
+    {"MunifTanjim/nui.nvim"},
 
     -- catppuccin
     -- {
