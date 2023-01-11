@@ -8,6 +8,7 @@ local keymap = vim.api.nvim_set_keymap
 --Remap space as leader key
 keymap('n', '<Space>', '<NOP>', opts)
 keymap('n', '<Enter>', '<NOP>', opts)
+keymap('n', '<Esc>', "<cmd> noh <CR>", opts)
 
 -- vim.g.mapleader = " "
 -- vim.g.maplocalleader = " "
@@ -23,10 +24,10 @@ keymap('n', '<Enter>', '<NOP>', opts)
 
 -- Normal --
 -- Better window navigation
-keymap("n", "<C-h>", "<C-w>h", opts)
-keymap("n", "<C-j>", "<C-w>j", opts)
-keymap("n", "<C-l>", "<C-w>l", opts)
-keymap("n", "<C-k>", "<C-w>k", opts)
+keymap("n", "<S-h>", "<C-w>h", opts)
+keymap("n", "<S-j>", "<C-w>j", opts)
+keymap("n", "<S-l>", "<C-w>l", opts)
+keymap("n", "<S-k>", "<C-w>k", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -44,8 +45,8 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Insert --
 -- Press jk fast to exit insert mode 
-keymap("i", "jk", "<ESC>", opts)
-keymap("i", "kj", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
@@ -66,8 +67,8 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- Terminal --
 -- Better terminal navigation
-keymap('t', '<C-h>', [[<Cmd>wincmd h<CR>]], term_opts)
-keymap('t', '<C-j>', [[<Cmd>wincmd j<CR>]], term_opts)
-keymap('t', '<C-k>', [[<Cmd>wincmd k<CR>]], term_opts)
-keymap('t', '<C-l>', [[<Cmd>wincmd l<CR>]], term_opts)
+keymap('t', '<S-h>', [[<Cmd>wincmd h<CR>]], term_opts)
+keymap('t', '<S-j>', [[<Cmd>wincmd j<CR>]], term_opts)
+keymap('t', '<S-k>', [[<Cmd>wincmd k<CR>]], term_opts)
+keymap('t', '<S-l>', [[<Cmd>wincmd l<CR>]], term_opts)
 
