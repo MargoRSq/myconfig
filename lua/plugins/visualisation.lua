@@ -35,8 +35,13 @@ return {
             setup_with_options_path("noice", "plugins.configs.noice")
         end
     },
+    {
+        "rcarriga/nvim-notify",
+        config = function ()
+            setup_with_options_path("notify", "plugins.configs.notify")
+        end
+    },
 
-    {"rcarriga/nvim-notify"},
     {"MunifTanjim/nui.nvim"},
 
     -- catppuccin
