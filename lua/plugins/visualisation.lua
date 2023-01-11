@@ -13,9 +13,7 @@ return {
         "nvim-lualine/lualine.nvim",
         lazy = false,
         dependecies = {"kyazdani42/nvim-web-devicons"},
-        config = function ()
-            default_setup("lualine")
-        end,
+        config = true,
     },
     {
         "akinsho/bufferline.nvim",

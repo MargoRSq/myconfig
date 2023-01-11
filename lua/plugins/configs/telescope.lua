@@ -3,6 +3,7 @@ local actions = require "telescope.actions"
 return {
     defaults = {
 
+        sorting_strategy = "ascending",
         prompt_prefix = " ",
         selection_caret = " ",
         path_display = { "smart" },

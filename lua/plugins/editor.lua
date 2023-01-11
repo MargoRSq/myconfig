@@ -9,15 +9,11 @@ return {
     {
         "Pocco81/auto-save.nvim",
         -- event = "VeryLazy",
-        config = function()
-            default_setup("auto-save")
-        end
+        config = true
     },
     {
         "numToStr/Comment.nvim",
-        config = function()
-            default_setup("Comment")
-        end,
+        config = true,
         keys =
         {
             { "<leader>/",

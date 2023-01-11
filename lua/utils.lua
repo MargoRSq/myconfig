@@ -1,11 +1,3 @@
-function default_setup(module_name)
-    local present, module = pcall(require, module_name)
-
-    if present then
-        module.setup({})
-    end
-end
-
 function setup_with_options_path(module_name, options_location)
     local module_present, module = pcall(require, module_name)
     local options_present, options = pcall(require, options_location)

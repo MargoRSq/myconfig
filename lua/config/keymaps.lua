@@ -8,6 +8,7 @@ local keymap = vim.api.nvim_set_keymap
 --Remap space as leader key
 keymap('n', '<Space>', '<NOP>', opts)
 keymap('n', '<Enter>', '<NOP>', opts)
+keymap('n', ';', '<NOP>', opts)
 keymap('n', '<Esc>', "<cmd> noh <CR>", opts)
 
 -- vim.g.mapleader = " "

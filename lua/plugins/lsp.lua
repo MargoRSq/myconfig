@@ -22,9 +22,7 @@ return {
             "williamboman/mason-lspconfig.nvim",
         },
         cmd = {"Mason"},
-        config = function()
-           default_setup("mason")
-        end,
+        config = true
     },
     {
         "williamboman/mason-lspconfig.nvim",
