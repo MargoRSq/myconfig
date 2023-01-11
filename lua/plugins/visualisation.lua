@@ -21,8 +21,12 @@ return {
         "akinsho/bufferline.nvim",
         lazy = false,
         config = function ()
-            default_setup("bufferline")
-        end
+            setup_with_options_path("bufferline", "plugins.configs.bufferline")
+        end,
+        keys = {
+            { "<S-w>", "<cmd> BufferLineCycleNext <CR>", mode = {"n"}},
+            { "<S-r>", ":enew<bar>bw #<CR>", mode = {"n"}},
+        }
     },
     {
         "folke/noice.nvim",

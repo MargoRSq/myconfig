@@ -1,6 +1,6 @@
 return {
     {
-        "hrsh7th/nvim-cmp",
+       "hrsh7th/nvim-cmp",
         dependencies = {
             "friendly-snippets",
             "LuaSnip",

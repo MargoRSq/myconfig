@@ -24,7 +24,6 @@ return {
             { "<leader>km", "<cmd> Telescope keymaps <CR>", mode = {"n", "v", "t"}},
             { "<leader>ff", "<cmd> Telescope find_files <CR>", mode = {"n", "v", "t"}},
             { "<leader>fg", "<cmd> Telescope live_grep <CR>", mode = {"n", "v", "t"}},
-
         }
     },
 
