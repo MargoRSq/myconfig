@@ -72,3 +72,8 @@ keymap('t', '<S-j>', [[<Cmd>wincmd j<CR>]], term_opts)
 keymap('t', '<S-k>', [[<Cmd>wincmd k<CR>]], term_opts)
 keymap('t', '<S-l>', [[<Cmd>wincmd l<CR>]], term_opts)
 
+keymap("n", "<leader>1", "<cmd> lua _LAZYGIT_TOGGLE() <CR>", term_opts)
+keymap("n", "<leader>2", "<cmd> lua _PYTHON_TOGGLE() <CR>", term_opts)
+keymap("n", "<leader>3", "<cmd> lua _HTOP_TOGGLE() <CR>", term_opts)
+keymap("n", "<leader>4", "<cmd> lua _NCDU_TOGGLE() <CR>", term_opts)
+
