@@ -3,7 +3,7 @@ local languages = require("plugins.configs.lsp.languages")
 return {
     {
         "neovim/nvim-lspconfig",
-        event = "BufReadPre",
+        lazy = false,
         dependencies = {
             { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
             { "folke/neodev.nvim", config = true },
