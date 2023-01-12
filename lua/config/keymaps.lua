@@ -77,4 +77,5 @@ keymap("n", "<leader>1", "<cmd> lua _LAZYGIT_TOGGLE() <CR>", term_opts)
 keymap("n", "<leader>2", "<cmd> lua _PYTHON_TOGGLE() <CR>", term_opts)
 keymap("n", "<leader>3", "<cmd> lua _HTOP_TOGGLE() <CR>", term_opts)
 keymap("n", "<leader>4", "<cmd> lua _NCDU_TOGGLE() <CR>", term_opts)
+keymap("n", "<leader>5", "<cmd> lua _PSQL_TOGGLE() <CR>", term_opts)
 

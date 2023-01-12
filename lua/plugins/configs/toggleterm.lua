@@ -17,6 +17,11 @@ function _LAZYGIT_TOGGLE()
     lazygit:toggle(50, "float")
 end
 
+local psql = Terminal:new({ cmd = "psql postgres", hidden = true })
+function _PSQL_TOGGLE()
+    psql:toggle(50, "float")
+end
+
 local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
 function _NCDU_TOGGLE()
     ncdu:toggle(50, "float")

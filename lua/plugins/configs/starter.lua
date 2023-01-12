@@ -22,9 +22,9 @@ return {
 	items = {
         starter.sections.sessions(7, true),
         starter.sections.recent_files(5, false, true),
-        { action = "LazyVim", name = "L: Lazy dashboard", section = "Lazy" },
+        { action = "Lazy", name = "L: Lazy dashboard", section = "Lazy" },
         { action = "lua _LAZYGIT_TOGGLE()", name = "G: LazyGit", section = "Lazy" },
-        starter.sections.builtin_actions()[2],
+        starter.sections.builtin_actions(),
 	},
 }
 
