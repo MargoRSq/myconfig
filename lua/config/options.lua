@@ -47,3 +47,6 @@ vim.opt.swapfile = false
 vim.opt.whichwrap:append "<>[]hl"
 
 --disable space and enter in normal mode
+
+
+vim.opt.confirm = true

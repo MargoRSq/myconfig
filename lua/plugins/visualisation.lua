@@ -26,23 +26,23 @@ return {
             { "<S-r>", ":enew<bar>bw #<CR>", mode = {"n"}},
         }
     },
-    {
-        "folke/noice.nvim",
-        lazy = false,
-        dependecies = {
-            "MunifTanjim/nui.nvim",
-            "rcarriga/nvim-notify",
-        },
-        config = function ()
-            setup_with_options_path("noice", "plugins.configs.noice")
-        end
-    },
-    {
-        "rcarriga/nvim-notify",
-        config = function ()
-            setup_with_options_path("notify", "plugins.configs.notify")
-        end
-    },
+    -- {
+    --     "folke/noice.nvim",
+    --     lazy = false,
+    --     dependecies = {
+    --         "MunifTanjim/nui.nvim",
+    --         "rcarriga/nvim-notify",
+    --     },
+    --     config = function ()
+    --         setup_with_options_path("noice", "plugins.configs.noice")
+    --     end
+    -- },
+    -- {
+    --     "rcarriga/nvim-notify",
+    --     config = function ()
+    --         setup_with_options_path("notify", "plugins.configs.notify")
+    --     end
+    -- },
 
     {"MunifTanjim/nui.nvim"},
 
