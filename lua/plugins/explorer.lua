@@ -15,7 +15,7 @@ return {
 	},
 	{
         "nvim-telescope/telescope.nvim",
-        dependecies = "nvim-lua/plenary.nvim",
+        dependecies = { "nvim-lua/plenary.nvim", "LinArcX/telescope-env.nvim" },
         event = "VeryLazy",
         config = function ()
             setup_with_options_path("telescope", "plugins.configs.telescope")
@@ -26,7 +26,7 @@ return {
             { "<leader>fg", "<cmd> Telescope live_grep <CR>", mode = {"n", "v", "t"}},
         }
     },
-
+    {"LinArcX/telescope-env.nvim"},
     {"kyazdani42/nvim-web-devicons"},
     {"nvim-lua/plenary.nvim"},
 }
