@@ -1,6 +1,7 @@
 M = {}
 
 M.servers = {
+    "pyright",
     "sumneko_lua",
     "clangd",
     "gopls",

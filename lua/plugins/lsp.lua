@@ -30,5 +30,11 @@ return {
             setup_with_options("mason-lspconfig", languages.mason_options)
         end,
     },
+    {
+        "jose-elias-alvarez/null-ls.nvim",
+        config = function ()
+            setup_with_options_path("null-ls", "plugins.configs.null_ls")
+        end
+    }
 }
 

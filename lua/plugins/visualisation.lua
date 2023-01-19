@@ -26,6 +26,13 @@ return {
             { "<S-r>", ":enew<bar>bw #<CR>", mode = {"n"}},
         }
     },
+    {
+        "kazhala/close-buffers.nvim",
+        event = "VeryLazy",
+        config = function ()
+            setup_with_options_path("close_buffers", "plugins.configs.close_buffers")
+        end
+    },
     -- {
     --     "folke/noice.nvim",
     --     lazy = false,

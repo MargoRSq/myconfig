@@ -2,7 +2,7 @@ return {
 
     {
         "kyazdani42/nvim-tree.lua",
-        event = "VeryLazy",
+        lazy = false,
 		cmd = { "NvimTreeToggle", "NvimTreeFocus" },
         dependecies = {"kyazdani42/nvim-web-devicons"},
         config = function()

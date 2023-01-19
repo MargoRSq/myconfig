@@ -1,6 +1,6 @@
 return {
     options = {
-        mode = "tabs", -- set to "tabs" to only show tabpages instead
+        mode = "buffers", -- set to "tabs" to only show tabpages instead
         indicator = {
             style = 'underline'
         },

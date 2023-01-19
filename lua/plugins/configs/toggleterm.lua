@@ -38,7 +38,7 @@ function _PYTHON_TOGGLE()
 end
 
 return {
-    size = 20,
+    size = 10,
     open_mapping = [[<c-\>]],
     hide_numbers = true,
     shade_filetypes = {},
